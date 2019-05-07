@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet prefetch" href="../css/libs/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/custom/sample.css">
+    <title>Sample!</title>
+</head>
+
+<body>
+
+    <section id="remaindar">
+        <div class="container">
+            <!-- mail composer -->
+            <div class="remaindar-body">
+                <span class="inbox-body">
+                    <a href="#remainderModal" data-toggle="modal" title="Compose" data-target="#remainderModal">
+                        click here
+                    </a>
+
+                    <!-- Modal -->
+                    <div id="remainderModal" aria-hidden="true" aria-labelledby="remainderModalLabel" role="dialog" tabindex="-1"
+                        class="modal fade" style="display: none;font-size:14px;">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Set Remaindar</h4>
+                                    <button aria-hidden="true" data-dismiss="modal" class="close"
+                                        type="button">×</button>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form">
+                                        <div class="form-group mail-label">
+                                            <div class="col-sm-2">
+                                                <label>Date</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="date" id="remaindarDate" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group mail-label">
+                                            <div class="col-sm-2">
+                                                <label>Time</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="time" id="remaindarTime" class="form-control" value="09:30">
+                                            </div>
+                                        </div>
+                                        <div class="form-group mail-label">
+                                            <div class="col-sm-2">
+                                                <label>Description</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" placeholder="" value="Talk to Siddharth"
+                                                    id="inputEmail1" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group mail-label">
+                                            <div class="col-sm-2">
+                                                <label>Person</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-sm" id="remaindarContactMedium">
+                                                        <option >Call</option>
+                                                        <option>Mail</option>
+                                                        <option>SMS</option>
+                                                        <option>Whatsapp</option>
+                                                        <option>Meet</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group float-right">
+                                            <div class="col-xs-offset-2 col-xs-10">
+                                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                                                <button class="btn btn-outline-success btn-sm" type="submit">Set Alarm</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="mail-composer">
+
+        <div class="container">
+            <!-- mail composer -->
+            <div class="inbox-body">
+                <a href="#myModal" data-toggle="modal" title="Compose" class="btn btn-compose">
+                    Compose
+                </a>
+
+                <!-- Modal -->
+                <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal"
+                    class="modal fade" style="display: none;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Compose</h4>
+                                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <div class="col-sm-2 mail-label">
+                                            <label>To</label>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <input type="text" placeholder="" id="inputEmail1" class="form-control">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-2 mail-label">
+                                            <label>Cc / Bcc</label>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <input type="text" placeholder="" id="cc" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-2 mail-label">
+                                            <label>Subject</label>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <input type="text" placeholder="" id="inputPassword1" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-2 mail-label">
+                                            <label>Message</label>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <textarea rows="10" cols="30" class="form-control" id="" name=""></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group float-right">
+                                        <div class="col-xs-offset-2 col-xs-10">
+                                            <span class="btn green fileinput-button">
+                                                <span class="glyphicon glyphicon-print"></span>
+                                                <span>Attachment</span>
+                                                <input type="file" name="files[]" multiple="">
+                                            </span>
+                                            <button class="btn btn-send" type="submit">Send</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+            </div>
+        </div>
+    </section>
+
+    <!-- mail composer ends -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/libs/jquery-3.4.1.min.js"></script>
+    <script src="../js/libs/popper.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/custom/sample.js"></script>
+
+</body>
+
+</html>
